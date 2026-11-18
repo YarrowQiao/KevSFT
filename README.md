@@ -1,3 +1,36 @@
+# KevSFT
+
+Fine-tune a Kev decision model to route requests to your team's services. Define the routes and a fallback, label conversations, then compare your candidate with the original Kev checkpoint on the same held-out examples. The quick start uses Kev-0.8B and a fictional public library. Your own examples, checkpoints and reports stay on your machine.
+
+[中文微调与评测指南](docs/kevsft.md) · [Docker 一键部署与回滚](deploy/kevsft/README.md) · [Example dataset](examples/kevsft)
+
+## Quick start for routing
+
+Use Linux, Python 3.12 or 3.13, [uv](https://docs.astral.sh/uv/) and a CUDA-capable GPU. The first run downloads the public model and its pinned base. Run these commands from the repository root.
+
+```bash
+uv sync --frozen --no-dev --extra serve --python 3.12
+.venv/bin/python -m kevsft.data --data examples/kevsft
+.venv/bin/python -m kevsft.train --data examples/kevsft --output private/runs/demo
+```
+
+Read `private/runs/demo/report.json` for baseline and candidate accuracy, class recall, fallback errors and the confusion matrices. To serve the selected checkpoint on Linux with Docker and the NVIDIA Container Toolkit, run
+
+```bash
+bash deploy/kevsft/up.sh private/runs/demo/best
+.venv/bin/python -m kevsft.data --data examples/kevsft --request 'Can I renew my audiobook?' |
+  curl --noproxy '*' -fsS http://127.0.0.1:8008/v1/systemone \
+    -H 'Content-Type: application/json' --data-binary @-
+```
+
+Read the route key from `answers.route.choice`. For new domains, copy the example directory to `private/data`, replace its routes and examples, and pass that path to both training and request generation. The included 33 examples demonstrate the workflow. Measure domain accuracy with your own independent test set.
+
+## Upstream Kev
+
+This project is a fork of [jaredpalmer/kev](https://github.com/jaredpalmer/kev). The original project documentation follows, including the model family, API and research benchmarks.
+
+---
+
 # Kev
 
 Small Jev-like decision models you can train and run yourself.

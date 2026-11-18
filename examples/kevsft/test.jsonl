@@ -1,0 +1,9 @@
+{"group":"loan-test-a","query":"May I extend the due date on my borrowed graphic novel?","label":"loans"}
+{"group":"loan-test-b","history":["I reserved the bird guide yesterday."],"query":"Can I collect it on Saturday?","label":"loans"}
+{"group":"loan-test-c","history":["Can I attend the printmaking class?"],"query":"A separate question: where do I return my borrowed map?","label":"loans"}
+{"group":"event-test-a","query":"How do I book a seat at the library stargazing evening?","label":"events"}
+{"group":"event-test-b","history":["My family wants to attend the library lantern-making session."],"query":"Should we bring any materials?","label":"events"}
+{"group":"event-test-c","history":["I have two borrowed dictionaries."],"query":"What is on the summer reading club calendar?","label":"events"}
+{"group":"other-test-a","query":"Can you help me fold a paper boat?","label":"other"}
+{"group":"other-test-b","history":["I am interested in the library's board game evening."],"query":"How many sides does a cube have?","label":"other"}
+{"group":"other-test-c","query":"Can you explain that one again?","label":"other"}

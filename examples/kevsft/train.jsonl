@@ -1,0 +1,18 @@
+{"group":"borrow-a","query":"Can I borrow an audiobook on my card?","label":"loans"}
+{"group":"borrow-a","history":["Can I borrow an audiobook on my card?"],"query":"How long can I keep it?","label":"loans"}
+{"group":"hold-a","query":"The cookbook is checked out. Can you put me on its waiting list?","label":"loans"}
+{"group":"hold-a","history":["I want to reserve a cookbook."],"query":"Where do I pick it up?","label":"loans"}
+{"group":"return-a","query":"Can I return a picture book in the outdoor drop box?","label":"loans"}
+{"group":"renew-a","history":["When does the book club meet?"],"query":"I also want to renew my atlas.","label":"loans"}
+{"group":"class-a","query":"When does registration open for the library's origami class?","label":"events"}
+{"group":"class-a","history":["I would like to attend the origami class."],"query":"Is there room for a friend?","label":"events"}
+{"group":"reading-a","query":"What day does the library poetry circle meet?","label":"events"}
+{"group":"reading-a","history":["What day does the library poetry circle meet?"],"query":"Does it meet every month?","label":"events"}
+{"group":"workshop-a","history":["I have a book on hold."],"query":"Can my child join the puppet workshop?","label":"events"}
+{"group":"talk-a","query":"Will the visiting illustrator take questions at the library talk?","label":"events"}
+{"group":"general-a","query":"Write a thank-you note for my neighbor.","label":"other"}
+{"group":"general-b","query":"How do I convert a fraction to a decimal?","label":"other"}
+{"group":"unclear-a","query":"Could you sort that out?","label":"other"}
+{"group":"switch-a","history":["I need a new due date for a novel."],"query":"What is a haiku?","label":"other"}
+{"group":"switch-b","history":["I signed up for the library's sketching class."],"query":"How do I clean a paintbrush?","label":"other"}
+{"group":"general-c","query":"What colors go well together on a birthday card?","label":"other"}

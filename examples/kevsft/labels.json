@@ -1,0 +1,5 @@
+{
+  "loans": "Borrowing library items, renewing loans, returns, and holds",
+  "events": "Library classes, reading groups, workshops, and event registration",
+  "other": "General questions, unrelated tasks, and requests with insufficient context"
+}

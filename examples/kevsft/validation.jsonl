@@ -1,0 +1,6 @@
+{"group":"loan-val-a","query":"I finished my DVD. May I return it at a different branch?","label":"loans"}
+{"group":"loan-val-b","history":["I placed a hold on a travel guide."],"query":"Can I cancel the hold?","label":"loans"}
+{"group":"event-val-a","query":"Is the library's chess workshop suitable for beginners?","label":"events"}
+{"group":"event-val-b","history":["I booked a place in the storytelling circle."],"query":"What time should I arrive?","label":"events"}
+{"group":"other-val-a","query":"Please suggest a name for a pet turtle.","label":"other"}
+{"group":"other-val-b","history":["I asked about a library concert."],"query":"How do I tune a ukulele?","label":"other"}

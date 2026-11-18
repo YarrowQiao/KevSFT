@@ -30,8 +30,8 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/jaredpalmer/kev"
-Issues = "https://github.com/jaredpalmer/kev/issues"
+Repository = "https://github.com/YarrowQiao/KevSFT"
+Upstream = "https://github.com/jaredpalmer/kev"
 "Model cards" = "https://github.com/jaredpalmer/kev/tree/main/docs/model-cards"
 
 [project.optional-dependencies]
@@ -58,4 +58,4 @@ testpaths = ["tests"]
 markers = ["server: needs a running kev.serve instance (KEV_BASE_URL)"]
 
 [tool.setuptools]
-packages = ["kev"]
+packages = ["kev", "kevsft"]
